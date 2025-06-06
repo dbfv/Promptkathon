@@ -49,6 +49,16 @@ nav {
   -ms-user-select: none;
 }
 
+.logo a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo a:hover {
+  color: var(--secondary-color);
+}
+
 .nav-links a {
   color: var(--text-light);
   text-decoration: none;
