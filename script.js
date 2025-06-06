@@ -1,3 +1,12 @@
+// Preload images for smooth transitions
+function preloadImages(container) {
+    const images = container.querySelectorAll('img');
+    images.forEach(img => {
+        const newImg = new Image();
+        newImg.src = img.src;
+    });
+}
+
 // Add smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -61,6 +70,45 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 document.addEventListener('click', (e) => {
     if (isMenuOpen && !navLinks.contains(e.target)) {
         toggleMenu();
+    }
+});
+
+// Enhanced Automatic Slideshow functionality
+document.querySelectorAll('.slideshow-container').forEach(container => {
+    // Preload images
+    preloadImages(container);
+
+    const slides = container.querySelectorAll('.slides');
+    let currentSlide = 0;
+    let isTransitioning = false;
+
+    function showSlide(n) {
+        if (isTransitioning) return;
+        isTransitioning = true;
+
+        slides.forEach(slide => {
+            slide.style.opacity = '0';
+            slide.classList.remove('active');
+        });
+
+        setTimeout(() => {
+            slides[n].style.opacity = '1';
+            slides[n].classList.add('active');
+            isTransitioning = false;
+        }, 50);
+    }
+
+    // Show first slide
+    if (slides.length > 0) {
+        showSlide(0);
+    }
+
+    // Auto advance slides with smooth transition
+    if (slides.length > 1) {
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
     }
 });
 
