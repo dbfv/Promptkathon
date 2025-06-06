@@ -1,0 +1,101 @@
+Tổng Hợp Thiết Kế Game: Nguyện Ước của Bác
+1. Giới Thiệu Tổng Quan
+Tên Game: Nguyện Ước của Bác
+Thể Loại: Bắn súng kết hợp giải đố, hành động 2.5D
+Chủ Đề: Văn hóa – lịch sử Việt Nam, tập trung vào lời dạy của Chủ tịch Hồ Chí Minh về ba loại giặc Giặc Đói – Giặc Dốt – Giặc Ngoại Xâm.
+Bối Cảnh Tổng Quan:
+Ngày 2/9/1945, tại Quảng trường Ba Đình, Bác Hồ đọc bản Tuyên ngôn Độc lập, khai sinh ra nước Việt Nam Dân chủ Cộng hòa.
+Dân tộc Việt Nam phải đối mặt với ba kẻ thù lớn: giặc đói, giặc dốt và giặc ngoại xâm. Ba thế lực này lần lượt bị đánh đuổi thông qua các hành động cụ thể của nhân dân.
+Người chơi sẽ lần lượt hóa thân thành ba nhân vật thuộc ba tầng lớp khác nhau, mỗi người là một biểu tượng của lòng yêu nước và ý chí quật cường dân tộc.
+Sau khi người chơi hoàn thành cả ba nhiệm vụ, một đoạn cutscene trang trọng sẽ diễn ra: các nhân vật chính cùng người dân thắp nén hương lên bàn thờ Bác Hồ, báo rằng đất nước đã vượt qua ba loại giặc – đúng như ước nguyện mà Bác từng nhắc đến trong các bài phát biểu và chỉ đạo lúc sinh thời.
+2. Core Concept & Gameplay
+Game Loop: Người chơi vào màn → chiến đấu với kẻ địch → hoàn thành mục tiêu giải phóng (phá kho, giải đố, tiêu diệt trùm) → sang màn kế.
+Core Mechanic: Bắn súng (đa dạng súng), di chuyển 8 hướng, né đạn, giải đố đơn giản (ghép chữ, tìm từ).
+2.5D Interpretation: Góc nhìn từ trên (top-down); layering nhân vật – địch – vật thể để tạo chiều sâu.
+Art Style: Pixel art phong cách retro, dễ sản xuất và tối ưu thời gian phát triển.
+Player Goal: Giải phóng từng khu vực tương ứng với từng 'giặc', hoàn thành sứ mệnh của Bác.
+Win/Loss Conditions: Hoàn thành mục tiêu màn chơi. Thua nếu bị tiêu diệt, không hoàn thành nhiệm vụ chính.
+MVP (Minimum Viable Product): Một màn chơi có bắn súng, một loại địch, một mục tiêu đơn giản (phá kho, ghép chữ...).
+Target Audience: Học sinh – sinh viên, người yêu lịch sử và giáo dục.
+3. Màn 1: Giặc Đói – Phá Kho Thóc (CHƯƠNG 1 – GIẶC ĐÓI)
+Nhân Vật Chính: Anh Long Lành – một nông dân nghèo ở miền Bắc, cựu chiến sĩ, chứng kiến gia đình, hàng xóm chết đói sau nạn đói năm 1945. Anh cùng dân làng phá kho thóc cứu đói.
+Bối Cảnh: Ban đêm, làng bị chiếm đóng, kho thóc được canh gác nghiêm ngặt. Có hệ thống còi báo động, ánh sáng đuốc và hiệu ứng cháy.
+Mục Tiêu Chung/Nhiệm Vụ:
+Vượt qua bọn canh giữ kho lương, thu thóc và chia gạo cứu dân làng.
+Phá 3 kho thóc.
+Cứu 10/15 dân làng.
+Diệt boss quản kho.
+Ý Nghĩa Văn Hóa: Tinh thần tương thân tương ái, sức sống kiên cường của nông dân Việt.
+Gameplay Chính: Top-down shooter + cứu người dân, thu lương thực.
+Vũ Khí: Các công cụ nông nghiệp như cuốc, rựa, liềm – dùng để cận chiến. Có thể nhặt và thay đổi công cụ trong lúc chơi.
+Kẻ Địch:
+Lính tay sai (dễ bị hạ nếu đánh lén).
+Lính Nhật (có giáp nhẹ).
+Chó săn (di chuyển nhanh).
+Boss quản kho (mang giáp, dùng kiếm katana).
+4. Màn 2: Giặc Dốt – Mở Lớp Giữa Lòng Tối Tăm (CHƯƠNG 2 – GIẶC DỐT)
+Nhân Vật Chính: Chị Sáu Nhung – một cô giáo gan dạ, một phụ nữ trí thức, từng là giáo viên, bị cấm dạy học trong thời thực dân. Chị âm thầm tổ chức các lớp dạy chữ trong thời kỳ đàn áp, mong truyền lại ánh sáng tri thức cho thế hệ trẻ.
+Phong Cách Nhân Vật: Linh hoạt, thông minh, bắn chính xác – thiên về chiến thuật hơn là hành động thuần túy.
+Mục Tiêu Chung/Nhiệm Vụ:
+Phá xiềng gông dốt nát, mở lớp học bình dân, truyền bá chữ quốc ngữ.
+Mở và bảo vệ 3 lớp học bí mật.
+Hoàn thành 3 mini game giải đố bảng chữ cái (ghép từ, nối chữ theo gợi ý từ NPC).
+Tiêu diệt Boss kiểm duyệt cuối màn.
+Ý Nghĩa Văn Hóa: Vai trò phụ nữ – người gieo chữ, giữ lửa văn hóa.
+Gameplay: Kết hợp bắn súng nhẹ + mini game ghép chữ, trao sách, giải cứu học sinh.
+Vũ Khí & Công Cụ:
+Súng lục – bán tự động, dùng để tự vệ trước các kẻ địch (bắn chính xác, bắn chậm, cần nạp đạn).
+Tài liệu học (sách, phấn, bảng nhỏ) – vật phẩm dùng để kích hoạt bảng đen giải đố.
+Có thể dùng sách ném để gây choáng nhẹ địch ở gần (một kiểu stun nhẹ).
+Bảng đen – mỗi lớp học tương ứng với một bảng đen được kích hoạt khi đã bảo vệ đủ thời gian. Mỗi “lớp học” là một điểm giải đố được mở ra sau khi bạn tiêu diệt hoặc lén vượt qua địch gác nơi đó.
+Kẻ Địch:
+Kẻ đốt sách (melee/cận chiến): Tấn công bảng đen khi phát hiện, dùng rựa, phá bảng học nếu không ngăn chặn kịp.
+Mật vụ (súng ngắn/bắn súng): Tuần tra khu vực, tầm trung, thường đi tuần theo nhóm nhỏ; phát hiện người học sẽ gọi tiếp viện.
+Boss Kiểm Duyệt: Có khả năng gọi địch liên tục/gọi thêm lính tiếp viện, dùng dùi cui điện/dùi cui đánh gần, nhanh và trâu, có giáp nhẹ, phá bảng đen nếu tiếp cận.
+Mini Game Bảng Đen:
+Người chơi phải hoàn thành câu đố dựa trên từ khóa văn hóa – lịch sử Việt Nam (ví dụ: "Độc lập", "Học tập", "Tự do").
+Dạng ghép: Ghép ký tự rơi ngẫu nhiên từ các chữ cái tiếng Việt, trong giới hạn thời gian.
+NPC gợi ý nội dung của từ qua lời thoại cảm động, gợi cảm hứng.
+Phần Thưởng Sau Mỗi Lớp Học Thành Công:
+Sách kỹ năng – Giúp giảm thời gian cần để ghép từ bảng tiếp theo.
+Tài liệu học thêm – Mở khóa hiệu ứng làm địch bối rối ngắn hạn khi gần lớp học.
+Chìa khóa căn hầm – Mở đoạn ký ức hồi tưởng về lời dạy của Bác dành cho người làm giáo dục.
+Bối Cảnh:
+Làng bị phong tỏa ban đêm, ánh sáng yếu ớt từ đèn dầu.
+Bảng học và học sinh nằm rải rác, người chơi cần dẫn NPC đến đúng điểm.
+Có các bảng đen giấu kín, chỉ kích hoạt khi kẻ địch tạm lắng.
+Địch xuất hiện theo đợt, tạo sức ép phải bảo vệ trong thời gian giải đố.
+Cutscene Cảm Xúc Sau Màn Chơi:
+Sau khi đánh bại Boss, dân làng cùng nhau viết khẩu hiệu "Học để làm người" trên tường nhà kho cũ.
+Cảnh cuối là một em nhỏ lần đầu tiên viết được chữ “Bác” lên bảng, khiến Chị Sáu Nhung xúc động, ngẩng nhìn lên trời – ánh mắt lặng lẽ dõi theo từ di ảnh Bác trên tường.
+5. Màn 3: Giặc Ngoại Xâm – Trận Tuyến Cuối Cùng (CHƯƠNG 3 – GIẶC NGOẠI XÂM)
+Nhân vật –  Anh Quân, chiến sĩ đặc công kiên cường, đại diện cho tinh thần bất khuất của nhân dân Việt Nam trong giai đoạn cuối cùng của kháng chiến. Anh là người đảm nhận nhiệm vụ quyết định: đập tan sào huyệt cuối cùng của quân xâm lược, mở ra kỷ nguyên độc lập trọn vẹn cho đất nước.
+
+Mục Tiêu Chung/Nhiệm Vụ:
+Đột nhập căn cứ địch bằng hệ thống giao thông hào.
+Phá hủy 2 trạm truyền tin: ngăn chặn quân viện trợ.
+Phá kho đạn: khiến Boss không còn khả năng gọi pháo binh từ xa.
+Tiêu diệt Boss cuối cùng – Đại tá Chỉ Huy để chấm dứt hoàn toàn sự hiện diện của giặc ngoại xâm trên mảnh đất quê hương.
+
+Ý Nghĩa Văn Hóa: Lòng yêu nước, tinh thần “thà chết chứ không mất nước”.
+
+
+Gameplay/Cơ Chế/Phong Cách:
+Phong cách chiến đấu thuần túy, giống “Metal Slug” mini.
+Né mìn, vượt chiến hào, tiêu diệt địch.
+Cứu đồng đội bị bắt nhốt.
+Vũ Khí: AK-47, súng liên thanh cổ, lựu đạn.
+Kẻ Địch:
+Giặc ngoại xâm = lính thực dân + xe tăng + máy bay nhỏ.
+Bộ binh (súng trường, di chuyển nhóm).
+Lính bắn tỉa (ẩn nấp, bắn xa).
+Xe cơ giới (chạy qua bản đồ, gây sát thương diện rộng).
+Boss: Đại tá chỉ huy, mang giáp chống đạn, dùng súng máy / tên tướng giặc bắn đại bác và gọi viện binh.
+
+Bối Cảnh: Đồi chiến sự, có giao thông hào, trạm thông tin và xe quân sự. Ánh sáng chớp nhoáng, âm thanh chiến trận khốc liệt.
+
+Tính Năng Đặc Biệt: Người chơi có thể điều khiển pháo hỗ trợ từ xa khi chiếm được trạm thông tin.
+6. Tổng Kết
+Nguyện Ước của Bác là một trò chơi mang đậm yếu tố lịch sử và truyền tải thông điệp nhân văn, giáo dục qua ba kẻ thù truyền thống: đói, dốt và ngoại xâm.
+Với lối chơi đơn giản nhưng sâu sắc, sản phẩm hướng tới mục tiêu giáo dục kết hợp giải trí trong thời gian ngắn.
+
