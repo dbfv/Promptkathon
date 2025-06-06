@@ -34,4 +34,34 @@ document.querySelector('.logo').addEventListener('click', () => {
     });
 });
 
+// Mobile menu toggle with improved functionality
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+let isMenuOpen = false;
+
+const toggleMenu = () => {
+    isMenuOpen = !isMenuOpen;
+    navLinks.classList.toggle('active');
+    navToggle.innerHTML = isMenuOpen ? '×' : '☰';
+};
+
+navToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (isMenuOpen) toggleMenu();
+    });
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (isMenuOpen && !navLinks.contains(e.target)) {
+        toggleMenu();
+    }
+});
+
 
